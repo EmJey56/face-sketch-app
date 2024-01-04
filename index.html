@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+
+<!-- This is for LEFT NAV ------------------------------------->
+
+      <div class="leftnav">
+        <div class="icons">
+            <img src="images/face.png" class="icon" id="face">
+            <label id="text">Face</label>
+            <img src="images/hair.png" class="icon" id="hair">
+            <label id="text">Hair</label>
+            <img src="images/eye.png" class="icon" id="eye"/>
+            <label id="text">Eye</label>
+            <img src="images/eyebrow.png" class="icon" id="eyebrow">
+            <label id="text">Eyebrow</label>
+            <img src="images/nose.png" class="icon" id="nose">
+            <label id="text">Nose</label>
+            <img src="images/lips.png" class="icon" id="lips">
+            <label id="text">Lips</label>
+            <img src="images/mustache.png" class="icon" id="mustache">
+            <label id="text">Mustache</label>
+            <img src="images/more.png" class="icon" id="more">
+            <label id="text">More</label>
+        </div>
+      </div>
+
+<!-- This is for CENTER NAV ---------------------------------------->
+
+      <div class="centernav">
+            
+        <div class="centerbox" id="centerbox">
+        </div>
+        <p class="resizeinstruction">To resize the image, double click on it.</p>
+      </div>
+
+<!-- This is for RIGHT NAV ----------------------------------------->
+
+      <div class="rightnav">
+        <div class="buttons">
+            <button class="button save">SAVE</button>
+            <button class="button" onclick="resetImages()">RESET</button>
+            <button class="button">COMPARE</button>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="bottom-image">
+            <P class="paragraph">HEAD SHAPES TO CHOOSE FROM</P>
+            <button class="deletebutton">Delete Shape</button>
+        </div>
+
+        <div class="selected-images-displaying">
+            <!-- This is for face -->
+            <div class="display-faceimage" id="box1">
+                <img src="sketch-elements/head/01.png" class="clickable-image" data-image="dynamic-1" id="head">
+                <img src="sketch-elements/hair/01.png" class="clickable-image" data-image="dynamic-1" id="hair">
+                <img src="sketch-elements/eyes/01.png" class="clickable-image" data-image="dynamic-1" id="eye">
+                <img src="sketch-elements/eyebrows/01.png" class="clickable-image" data-image="dynamic-1" id="eyebrows">
+                <img src="sketch-elements/nose/01.png" class="clickable-image" data-image="dynamic-1" id="nose">
+                <img src="sketch-elements/lips/01.png" class="clickable-image" data-image="dynamic-1" id="lips">
+                <img src="sketch-elements/mustach/01.png" class="clickable-image" data-image="dynamic-1" id="mustache">
+                <img src="sketch-elements/more/01.png" class="clickable-image" data-image="dynamic-1" id="more">
+            </div>
+            <div class="display-faceimage" id="box2">
+                <img src="sketch-elements/head/02.png" class="clickable-image" data-image="dynamic-1" id="head">
+                <img src="sketch-elements/hair/02.png" class="clickable-image" data-image="dynamic-1" id="hair">
+                <img src="sketch-elements/eyes/02.png" class="clickable-image" data-image="dynamic-1" id="eye">
+                <img src="sketch-elements/eyebrows/02.png" class="clickable-image" data-image="dynamic-1" id="eyebrows">
+                <img src="sketch-elements/nose/02.png" class="clickable-image" data-image="dynamic-1" id="nose">
+                <img src="sketch-elements/lips/02.png" class="clickable-image" data-image="dynamic-1" id="lips">
+                <img src="sketch-elements/mustach/02.png" class="clickable-image" data-image="dynamic-1" id="mustache">
+                <img src="sketch-elements/more/02.png" class="clickable-image" data-image="dynamic-1" id="more">
+            </div>          
+            <div class="display-faceimage" id="box3">
+                <img src="sketch-elements/head/03.png" class="clickable-image" data-image="dynamic-1" id="head">
+                <img src="sketch-elements/hair/03.png" class="clickable-image" data-image="dynamic-1" id="hair">
+                <img src="sketch-elements/eyes/03.png" class="clickable-image" data-image="dynamic-1" id="eye">
+                <img src="sketch-elements/eyebrows/03.png" class="clickable-image" data-image="dynamic-1" id="eyebrows">
+                <img src="sketch-elements/nose/03.png" class="clickable-image" data-image="dynamic-1" id="nose">
+                <img src="sketch-elements/lips/03.png" class="clickable-image" data-image="dynamic-1" id="lips">
+                <img src="sketch-elements/mustach/03.png" class="clickable-image" data-image="dynamic-1" id="mustache">
+                <img src="sketch-elements/more/03.png" class="clickable-image" data-image="dynamic-1" id="more">
+            </div>
+            <div class="display-faceimage" id="box4">
+                <img src="sketch-elements/head/04.png" class="clickable-image" data-image="dynamic-1" id="head">
+                <img src="sketch-elements/hair/04.png" class="clickable-image" data-image="dynamic-1" id="hair">
+                <img src="sketch-elements/eyes/04.png" class="clickable-image" data-image="dynamic-1" id="eye">
+                <img src="sketch-elements/eyebrows/04.png" class="clickable-image" data-image="dynamic-1" id="eyebrows">
+                <img src="sketch-elements/nose/04.png" class="clickable-image" data-image="dynamic-1" id="nose">
+                <img src="sketch-elements/lips/04.png" class="clickable-image" data-image="dynamic-1" id="lips">
+                <img src="sketch-elements/mustach/04.png" class="clickable-image" data-image="dynamic-1" id="mustache">
+                <img src="sketch-elements/more/04.png" class="clickable-image" data-image="dynamic-1" id="more">
+                
+            </div>
+            <div class="display-faceimage" id="box5">
+                <img src="sketch-elements/head/05.png" class="clickable-image" data-image="dynamic-1" id="head">
+                <img src="sketch-elements/hair/05.png" class="clickable-image" data-image="dynamic-1" id="hair">
+                <img src="sketch-elements/eyes/05.png" class="clickable-image" data-image="dynamic-1" id="eye">
+                <img src="sketch-elements/eyebrows/05.png" class="clickable-image" data-image="dynamic-1" id="eyebrows">
+                <img src="sketch-elements/nose/05.png" class="clickable-image" data-image="dynamic-1" id="nose">
+                <img src="sketch-elements/lips/05.png" class="clickable-image" data-image="dynamic-1" id="lips">
+                <img src="sketch-elements/mustach/05.png" class="clickable-image" data-image="dynamic-1" id="mustache">
+                <img src="sketch-elements/more/05.png" class="clickable-image" data-image="dynamic-1" id="more">
+            </div>
+            <div class="display-faceimage" id="box6">
+                <img src="sketch-elements/head/06.png" class="clickable-image" data-image="dynamic-1" id="head">
+                <img src="sketch-elements/hair/06.png" class="clickable-image" data-image="dynamic-1" id="hair">
+                <img src="sketch-elements/eyes/06.png" class="clickable-image" data-image="dynamic-1" id="eye">
+                <img src="sketch-elements/eyebrows/06.png" class="clickable-image" data-image="dynamic-1" id="eyebrows">
+                <img src="sketch-elements/nose/06.png" class="clickable-image" data-image="dynamic-1" id="nose">
+                <img src="sketch-elements/lips/06.png" class="clickable-image" data-image="dynamic-1" id="lips">
+                <img src="sketch-elements/mustach/06.png" class="clickable-image" data-image="dynamic-1" id="mustache">
+                <img src="sketch-elements/more/06.png" class="clickable-image" data-image="dynamic-1" id="more">
+            </div>
+            <div class="display-faceimage" id="box7">
+                <img src="sketch-elements/head/07.png" class="clickable-image" data-image="dynamic-1" id="head">
+                <img src="sketch-elements/hair/07.png" class="clickable-image" data-image="dynamic-1" id="hair">
+                <img src="sketch-elements/eyes/07.png" class="clickable-image" data-image="dynamic-1" id="eye">
+                <img src="sketch-elements/eyebrows/07.png" class="clickable-image" data-image="dynamic-1" id="eyebrows">
+                <img src="sketch-elements/nose/07.png" class="clickable-image" data-image="dynamic-1" id="nose">
+                <img src="sketch-elements/lips/07.png" class="clickable-image" data-image="dynamic-1" id="lips">
+                <img src="sketch-elements/mustach/07.png" class="clickable-image" data-image="dynamic-1" id="mustache">
+                <img src="sketch-elements/more/Group 11.png" class="clickable-image" data-image="dynamic-1" id="more">
+            </div>
+            <div class="display-faceimage" id="box8">
+                <img src="sketch-elements/head/08.png" class="clickable-image" data-image="dynamic-1" id="head">
+                <img src="sketch-elements/hair/08.png" class="clickable-image" data-image="dynamic-1" id="hair">
+                <img src="sketch-elements/eyes/08.png" class="clickable-image" data-image="dynamic-1" id="eye">
+                <img src="sketch-elements/eyebrows/08.png" class="clickable-image" data-image="dynamic-1" id="eyebrows">
+                <img src="sketch-elements/nose/08.png" class="clickable-image" data-image="dynamic-1" id="nose">
+                <img src="sketch-elements/lips/08.png" class="clickable-image" data-image="dynamic-1" id="lips">
+                <img src="sketch-elements/mustach/08.png" class="clickable-image" data-image="dynamic-1" id="mustache">
+                <img src="sketch-elements/more/Group 12.png" class="clickable-image" data-image="dynamic-1" id="more">
+            </div>
+            <div class="display-faceimage" id="box9">
+                <img src="sketch-elements/head/09.png" class="clickable-image" data-image="dynamic-1" id="head">
+                <img src="sketch-elements/hair/09.png" class="clickable-image" data-image="dynamic-1" id="hair">
+                <img src="sketch-elements/eyes/09.png" class="clickable-image" data-image="dynamic-1" id="eye">
+                <img src="sketch-elements/eyebrows/09.png" class="clickable-image" data-image="dynamic-1" id="eyebrows">
+                <img src="sketch-elements/nose/09.png" class="clickable-image" data-image="dynamic-1" id="nose">
+                <img src="sketch-elements/lips/09.png" class="clickable-image" data-image="dynamic-1" id="lips">
+                <img src="sketch-elements/mustach/09.png" class="clickable-image" data-image="dynamic-1" id="mustache">
+                <img src="sketch-elements/more/Group 13.png" class="clickable-image" data-image="dynamic-1" id="more">
+            </div>
+
+             
+        </div>
+
+      </div>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
